@@ -1,9 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio Indra Prima Ramadani — Mahasiswa S1 Teknologi Informasi BSI Slipi. Pengalaman, galeri, dan sertifikasi."
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -24,15 +28,15 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Indrapr</title>
+    <title>Indra Prima Ramadani — Portfolio</title>
   </head>
-  <body id="home">
+  <body>
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top"
     >
       <div class="container">
-        <a class="navbar-brand" href="#">Indra Prima Ramadani</a>
+        <a class="navbar-brand" href="#home">Indra Prima Ramadani</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -52,10 +56,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#experiences">Experiences</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#galleria">Galleria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates">Certificates</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -66,201 +73,578 @@
     </nav>
     <!-- Akhir Navbar -->
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
+    <!-- Hero / Home -->
+    <section id="home" class="jumbotron text-center">
       <img
         src="img/profil.jpg"
         alt="Indra Prima Ramadani"
         width="200"
-        class="rounded-circle img-thumbnail"
+        class="rounded-circle"
         style="object-fit: cover; height: 200px; width: 200px"
       />
-      <h1 class="display-4">Indra Prima Ramadani</h1>
-      <p class="lead">Mahasiswa S1 Teknologi Informasi | BSI Slipi</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <h1 class="display-4 mt-3">Indra Prima Ramadani</h1>
+      <p class="lead">Full-Stack Developer &amp; IT Support</p>
+
+      <!-- Social Icons Hero -->
+      <div class="social-icons">
+        <a
+          href="https://github.com/indraprdeveloper"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          class="hero-social-link github"
+          title="GitHub"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/indraprmdn"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          class="hero-social-link linkedin"
+          title="LinkedIn"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.instagram.com/indrapr_/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          class="hero-social-link instagram"
+          title="Instagram"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="margin-bottom: -5px; position: relative; z-index: 5"
+      >
         <path
           fill="#ffffff"
           fill-opacity="1"
-          d="M0,128L48,160C96,192,192,256,288,250.7C384,245,480,171,576,138.7C672,107,768,117,864,144C960,171,1056,213,1152,229.3C1248,245,1344,235,1392,229.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          d="M0,128L48,160C96,192,192,256,288,250.7C384,245,480,171,576,138.7C672,107,768,117,864,144C960,171,1056,213,1152,229.3C1248,245,1344,235,1392,229.3L1440,224L1440,330L0,330Z"
         ></path>
+        <rect x="-10" y="315" width="1460" height="20" fill="#ffffff" />
       </svg>
     </section>
-    <!-- Akhir Jumbotron -->
+    <!-- Akhir Hero -->
 
-    <!-- About -->
-    <section id="about">
+    <!-- Experiences -->
+    <section id="experiences">
       <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About Me</h2>
+        <div class="text-center mb-5">
+          <div class="d-flex justify-content-center mb-5">
+            <div class="cert-heading-wrapper">
+              <div class="cert-heading-border"></div>
+              <h2 class="cert-heading-banner">EXPERIENCES</h2>
+            </div>
           </div>
+          <p class="section-subtitle">
+            Perjalanan pendidikan, sertifikasi, dan pengalaman yang telah
+            membentuk kemampuan saya.
+          </p>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
-            <p>
-              Sebagai mahasiswa tingkat akhir Teknologi Informasi, saya adalah
-              seorang pembelajar yang cepat dan adaptif, dengan antusiasme
-              tinggi untuk mengubah tantangan menjadi solusi digital yang
-              efektif. Saya mencari kesempatan untuk memulai karir dan
-              bersemangat membawa energi serta perspektif baru untuk menjadi
-              aset berharga bagi tim Anda.
-            </p>
-          </div>
-          <div
-            class="col-md-4"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <p>
-              Didorong oleh semangat pada dunia teknologi, saya adalah mahasiswa
-              tingkat akhir IT yang adaptif dan siap mengubah tantangan menjadi
-              solusi nyata. Kini saya mencari peluang untuk berkontribusi secara
-              aktif dalam sebuah tim yang dinamis dan membuktikan diri sebagai
-              aset yang berharga.
-            </p>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="timeline">
+              <!-- Item 1 -->
+              <div
+                class="timeline-item"
+                data-aos="fade-right"
+                data-aos-duration="800"
+              >
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">September – Desember 2025</span>
+                  <h4>Magang Full Stack Developer</h4>
+                  <div class="timeline-company">
+                    <i class="bi bi-building"></i> MileniaNews
+                  </div>
+                  <ul class="timeline-list">
+                    <li>
+                      Mengembangkan platform Community Writer untuk manajemen artikel dan kontributor.
+                    </li>
+                    <li>
+                      Membuat dashboard penulis, editor artikel, sistem poin, dan fitur redeem reward.
+                    </li>
+                    <li>
+                      Mengintegrasikan aplikasi dengan WordPress API, MySQL menggunakan Prisma ORM, dan Cloudflare R2.
+                    </li>
+                    <li>
+                      Membangun fitur autentikasi, upload gambar, serta admin dashboard untuk pengelolaan data.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div
+                class="timeline-item"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="100"
+              >
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2024 – Sekarang</span>
+                  <h4>Mahasiswa S1 Teknologi Informasi</h4>
+                  <p>
+                    Universitas BSI Slipi — Mendalami bidang IT, pengembangan
+                    web, dan jaringan komputer.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div
+                class="timeline-item"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2023</span>
+                  <h4>Cisco Networking Academy</h4>
+                  <p>
+                    Menyelesaikan program sertifikasi jaringan komputer dari
+                    Cisco Academy.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div
+                class="timeline-item"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2023</span>
+                  <h4>Mikrotik Academy</h4>
+                  <p>
+                    Pelatihan konfigurasi dan manajemen router Mikrotik untuk
+                    kebutuhan jaringan enterprise.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 5 -->
+              <div
+                class="timeline-item"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="400"
+              >
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2023</span>
+                  <h4>Sertifikasi Kriptografi</h4>
+                  <p>
+                    Mempelajari dasar-dasar kriptografi dan keamanan data
+                    digital.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 6 -->
+              <div
+                class="timeline-item"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="500"
+              >
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2022</span>
+                  <h4>Seminar Entrepreneur</h4>
+                  <p>
+                    Workshop kewirausahaan digital — mengeksplorasi peluang
+                    bisnis di era teknologi.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 7 -->
+              <div
+                class="timeline-item"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="600"
+              >
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">Februari – April 2021</span>
+                  <h4>PKL Teknisi WiFi</h4>
+                  <div class="timeline-company">
+                    <i class="bi bi-building"></i> PT. BINTANG MARAGA LINTAS MEDIA
+                  </div>
+                  <ul class="timeline-list">
+                    <li>
+                      Melakukan instalasi dan konfigurasi jaringan Wi-Fi untuk klien.
+                    </li>
+                    <li>
+                      Melakukan troubleshooting dan maintenance rutin untuk menjaga stabilitas koneksi jaringan.
+                    </li>
+                    <li>
+                      Memberikan edukasi dan panduan teknis dasar kepada pelanggan terkait penggunaan jaringan.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="margin-bottom: -5px; position: relative; z-index: 5"
+      >
         <path
           fill="#e2edff"
           fill-opacity="1"
-          d="M0,32L48,53.3C96,75,192,117,288,138.7C384,160,480,160,576,154.7C672,149,768,139,864,149.3C960,160,1056,192,1152,186.7C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          d="M0,32L48,53.3C96,75,192,117,288,138.7C384,160,480,160,576,154.7C672,149,768,139,864,149.3C960,160,1056,192,1152,186.7C1248,181,1344,139,1392,117.3L1440,96L1440,330L0,330Z"
         ></path>
+        <rect x="-10" y="315" width="1460" height="20" fill="#e2edff" />
       </svg>
     </section>
-    <!-- Akhir About -->
+    <!-- Akhir Experiences -->
 
-    <!-- Projects -->
-    <section id="projects">
+    <!-- Galleria -->
+    <section id="galleria">
       <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>My Projects</h2>
+        <div class="text-center mb-5">
+          <div class="d-flex justify-content-center mb-5">
+            <div class="cert-heading-wrapper">
+              <div class="cert-heading-border"></div>
+              <h2 class="cert-heading-banner">GALLERIA</h2>
+            </div>
           </div>
+          <p class="section-subtitle">
+            Koleksi foto kegiatan, project, dan momen berharga selama perjalanan
+            belajar saya.
+          </p>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500">
-              <img
-                src="img/Certificates Cisco.jpg"
-                class="card-img-top"
-                alt="Cisco"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+        <div class="gallery-grid">
+          <!-- Gallery Item 1 -->
+          <div
+            class="gallery-item"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            data-img="img/Certificates Cisco.jpg"
+            data-caption="Cisco Networking Academy"
+          >
+            <img
+              src="img/Certificates Cisco.jpg"
+              alt="Cisco Networking Academy"
+            />
+            <div class="gallery-overlay">
+              <h5>Cisco Networking</h5>
+              <i class="bi bi-zoom-in"></i>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div
-              class="card"
-              data-aos="flip-left"
-              data-aos-duration="500"
-              data-aos-delay="100"
-            >
-              <img
-                src="img/Certificates Mikrotik.jpg"
-                class="card-img-top"
-                alt="Mikrotik"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+          <!-- Gallery Item 2 -->
+          <div
+            class="gallery-item"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            data-img="img/Certificates Mikrotik.jpg"
+            data-caption="Mikrotik Academy"
+          >
+            <img src="img/Certificates Mikrotik.jpg" alt="Mikrotik Academy" />
+            <div class="gallery-overlay">
+              <h5>Mikrotik Academy</h5>
+              <i class="bi bi-zoom-in"></i>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div
-              class="card"
-              data-aos="flip-left"
-              data-aos="flip-left"
-              data-aos-duration="500"
-              data-aos-delay="200"
-            >
-              <img
-                src="img/Certificates Criptografi.jpg"
-                class="card-img-top"
-                alt="Criptografi"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+          <!-- Gallery Item 3 -->
+          <div
+            class="gallery-item"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="200"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            data-img="img/Certificates Criptografi.jpg"
+            data-caption="Sertifikasi Kriptografi"
+          >
+            <img
+              src="img/Certificates Criptografi.jpg"
+              alt="Sertifikasi Kriptografi"
+            />
+            <div class="gallery-overlay">
+              <h5>Kriptografi</h5>
+              <i class="bi bi-zoom-in"></i>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div
-              class="card"
-              data-aos="flip-left"
-              data-aos="flip-left"
-              data-aos-duration="500"
-              data-aos-delay="300"
-            >
-              <img
-                src="img/Certificate Introduction.jpg"
-                class="card-img-top"
-                alt="Introduction"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+          <!-- Gallery Item 4 -->
+          <div
+            class="gallery-item"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="300"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            data-img="img/Certificate Introduction.jpg"
+            data-caption="Introduction to Cybersecurity"
+          >
+            <img
+              src="img/Certificate Introduction.jpg"
+              alt="Introduction to Cybersecurity"
+            />
+            <div class="gallery-overlay">
+              <h5>Cybersecurity Intro</h5>
+              <i class="bi bi-zoom-in"></i>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div
-              class="card"
-              data-aos="flip-left"
-              data-aos="flip-left"
-              data-aos-duration="500"
-              data-aos-delay="400"
-            >
-              <img
-                src="img/Seminar Entrepreneur.jpg"
-                class="card-img-top"
-                alt="Entrepreneur"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+          <!-- Gallery Item 5 -->
+          <div
+            class="gallery-item"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="400"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            data-img="img/Seminar Entrepreneur.jpg"
+            data-caption="Seminar Entrepreneur"
+          >
+            <img
+              src="img/Seminar Entrepreneur.jpg"
+              alt="Seminar Entrepreneur"
+            />
+            <div class="gallery-overlay">
+              <h5>Seminar Entrepreneur</h5>
+              <i class="bi bi-zoom-in"></i>
+            </div>
+          </div>
+          <!-- Gallery Item 6 (Profile) -->
+          <div
+            class="gallery-item"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="500"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            data-img="img/profil.jpg"
+            data-caption="Indra Prima Ramadani"
+          >
+            <img src="img/profil.jpg" alt="Indra Prima Ramadani" />
+            <div class="gallery-overlay">
+              <h5>Profil</h5>
+              <i class="bi bi-zoom-in"></i>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+      <!-- Lightbox Modal -->
+      <div
+        class="modal fade modal-lightbox"
+        id="lightboxModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-body">
+              <img id="lightboxImage" src="" alt="Lightbox" />
+            </div>
+            <div class="modal-caption" id="lightboxCaption"></div>
+          </div>
+        </div>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="margin-bottom: -5px; position: relative; z-index: 5"
+      >
         <path
           fill="#ffffff"
           fill-opacity="1"
-          d="M0,192L48,170.7C96,149,192,107,288,128C384,149,480,235,576,234.7C672,235,768,149,864,133.3C960,117,1056,171,1152,186.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          d="M0,192L48,170.7C96,149,192,107,288,128C384,149,480,235,576,234.7C672,235,768,149,864,133.3C960,117,1056,171,1152,186.7C1248,203,1344,181,1392,170.7L1440,160L1440,330L0,330Z"
         ></path>
+        <rect x="-10" y="315" width="1460" height="20" fill="#ffffff" />
       </svg>
     </section>
-    <!-- Akhir Projects -->
+    <!-- Akhir Galleria -->
+
+    <!-- Certificates -->
+    <section id="certificates">
+      <div class="container">
+        <!-- Banner Heading -->
+        <div class="text-center mb-5">
+          <div class="d-flex justify-content-center mb-5">
+            <div class="cert-heading-wrapper">
+              <div class="cert-heading-border"></div>
+              <h2 class="cert-heading-banner">MY CERTIFICATE</h2>
+            </div>
+          </div>
+          <p class="section-subtitle">
+            Sertifikat dan pencapaian yang telah saya raih dalam perjalanan
+            belajar untuk membangun kepercayaan dan kompetensi.
+          </p>
+        </div>
+
+        <!-- Row 1: 3 columns -->
+        <div class="cert-grid cert-grid-3 mb-4">
+          <div
+            class="cert-card-v2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            data-img="img/Certificates Cisco.jpg"
+            data-caption="Cisco Networking Academy"
+          >
+            <img
+              src="img/Certificates Cisco.jpg"
+              alt="Cisco Networking Academy"
+            />
+            <h3>Cisco Networking Academy</h3>
+          </div>
+          <div
+            class="cert-card-v2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            data-img="img/Certificates Mikrotik.jpg"
+            data-caption="Mikrotik Academy"
+          >
+            <img src="img/Certificates Mikrotik.jpg" alt="Mikrotik Academy" />
+            <h3>Mikrotik Academy</h3>
+          </div>
+          <div
+            class="cert-card-v2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="200"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            data-img="img/Certificates Criptografi.jpg"
+            data-caption="Sertifikasi Kriptografi"
+          >
+            <img
+              src="img/Certificates Criptografi.jpg"
+              alt="Sertifikasi Kriptografi"
+            />
+            <h3>Sertifikasi Kriptografi</h3>
+          </div>
+        </div>
+
+        <!-- Row 2: 2 columns centered -->
+        <div class="cert-grid cert-grid-2">
+          <div
+            class="cert-card-v2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="300"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            data-img="img/Certificate Introduction.jpg"
+            data-caption="Introduction to Cybersecurity"
+          >
+            <img
+              src="img/Certificate Introduction.jpg"
+              alt="Introduction to Cybersecurity"
+            />
+            <h3>Introduction to Cybersecurity</h3>
+          </div>
+          <div
+            class="cert-card-v2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="400"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+            data-img="img/Seminar Entrepreneur.jpg"
+            data-caption="Seminar Entrepreneur"
+          >
+            <img
+              src="img/Seminar Entrepreneur.jpg"
+              alt="Seminar Entrepreneur"
+            />
+            <h3>Seminar Entrepreneur</h3>
+          </div>
+        </div>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="margin-bottom: -5px; position: relative; z-index: 5"
+      >
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,64L48,101.3C96,139,192,213,288,224C384,235,480,181,576,154.7C672,128,768,128,864,160C960,192,1056,256,1152,240C1248,224,1344,128,1392,80L1440,32L1440,330L0,330Z"
+        ></path>
+        <rect x="-10" y="315" width="1460" height="20" fill="#e2edff" />
+      </svg>
+    </section>
+    <!-- Akhir Certificates -->
 
     <!-- Contact -->
     <section id="contact">
       <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
+        <div class="text-center mb-5">
+          <div class="d-flex justify-content-center mb-5">
+            <div class="cert-heading-wrapper">
+              <div class="cert-heading-border"></div>
+              <h2 class="cert-heading-banner">CONTACT ME</h2>
+            </div>
           </div>
+          <p class="section-subtitle">
+            Punya pertanyaan atau ingin berkolaborasi? Jangan ragu untuk
+            menghubungi saya.
+          </p>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="800">
             <div
               class="alert alert-success alert-dismissible fade show d-none my-alert"
               role="alert"
@@ -323,12 +707,17 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="margin-bottom: -5px; position: relative; z-index: 5"
+      >
         <path
           fill="#0d6efd"
           fill-opacity="1"
-          d="M0,64L48,101.3C96,139,192,213,288,224C384,235,480,181,576,154.7C672,128,768,128,864,160C960,192,1056,256,1152,240C1248,224,1344,128,1392,80L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          d="M0,64L48,101.3C96,139,192,213,288,224C384,235,480,181,576,154.7C672,128,768,128,864,160C960,192,1056,256,1152,240C1248,224,1344,128,1392,80L1440,32L1440,330L0,330Z"
         ></path>
+        <rect x="-10" y="315" width="1460" height="20" fill="#0d6efd" />
       </svg>
     </section>
     <!-- Akhir Contact -->
@@ -354,23 +743,101 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      // Clear URL hash and prevent browser auto-scroll on reload
+      if (window.location.hash) {
+        history.replaceState(
+          null,
+          "",
+          window.location.pathname + window.location.search,
+        );
+      }
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.scrollTo(0, 0);
+      window.addEventListener("load", () => {
+        window.scrollTo(0, 0);
+      });
+
       AOS.init({
         once: true,
+      });
+
+      // Smooth scroll for nav links with offset for fixed navbar
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const target = document.querySelector(targetId);
+          if (target) {
+            const navHeight = document.querySelector(".navbar").offsetHeight;
+            const targetPosition =
+              target.getBoundingClientRect().top +
+              window.pageYOffset -
+              navHeight;
+            window.scrollTo({
+              top: targetId === "#home" ? 0 : targetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
       });
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
     <script>
+      // Hero image bounce animation
       gsap.from(".jumbotron img", {
         duration: 1,
         y: -100,
         opacity: 0,
-        ease: "bounce", // Opsional: Menambahkan easing agar animasi lebih halus
+        ease: "bounce",
       });
     </script>
 
     <script>
+      // Lightbox functionality
+      const lightboxModal = document.getElementById("lightboxModal");
+      const lightboxImage = document.getElementById("lightboxImage");
+      const lightboxCaption = document.getElementById("lightboxCaption");
+
+      document
+        .querySelectorAll(".gallery-item, .cert-card-v2")
+        .forEach((item) => {
+          item.addEventListener("click", () => {
+            const imgSrc = item.getAttribute("data-img");
+            const caption = item.getAttribute("data-caption");
+            lightboxImage.src = imgSrc;
+            lightboxImage.alt = caption;
+            lightboxCaption.textContent = caption;
+          });
+        });
+
+      // Navbar active link on scroll
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      // Contact form submission
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbzupKYIxAh47apQQ1AcZ3OZFK-9BXdi40u1Xo62aBj_hV1RhlJFbGlGmL4zqm7D5Us/exec";
       const form = document.forms["indrapr-contact-form"];
